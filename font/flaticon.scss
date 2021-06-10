@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?46db47e7c44971659ac141f7dea39a01") format("truetype"),
+url("./flaticon.woff?46db47e7c44971659ac141f7dea39a01") format("woff"),
+url("./flaticon.woff2?46db47e7c44971659ac141f7dea39a01") format("woff2"),
+url("./flaticon.eot?46db47e7c44971659ac141f7dea39a01#iefix") format("embedded-opentype"),
+url("./flaticon.svg?46db47e7c44971659ac141f7dea39a01#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "slide": "\f101",
+    "chain": "\f102",
+    "streaming": "\f103",
+    "camera-stand": "\f104",
+    "microscope": "\f105",
+    "play-button": "\f106",
+    "guarantee": "\f107",
+    "add": "\f108",
+    "telephone": "\f109",
+);
+
+.flaticon-slide:before {
+    content: map-get($flaticon-map, "slide");
+}
+.flaticon-chain:before {
+    content: map-get($flaticon-map, "chain");
+}
+.flaticon-streaming:before {
+    content: map-get($flaticon-map, "streaming");
+}
+.flaticon-camera-stand:before {
+    content: map-get($flaticon-map, "camera-stand");
+}
+.flaticon-microscope:before {
+    content: map-get($flaticon-map, "microscope");
+}
+.flaticon-play-button:before {
+    content: map-get($flaticon-map, "play-button");
+}
+.flaticon-guarantee:before {
+    content: map-get($flaticon-map, "guarantee");
+}
+.flaticon-add:before {
+    content: map-get($flaticon-map, "add");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon-map, "telephone");
+}
